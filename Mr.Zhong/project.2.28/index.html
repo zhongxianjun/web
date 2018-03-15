@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tab选项卡</title>
+	<style type="text/css">
+		*{padding: 0; margin: 0;}
+		ul{ list-style: none; }
+		#product{width:990px;margin:50px auto;}
+		#product ul{overflow: hidden;border-bottom: 1px solid #e4393c;}
+		#product li{float:left;font-size:14px;padding: 10px 25px;color:#666;cursor: pointer;}
+		#product li:hover{color: #e4393c;}
+		#product li.on{color:#fff;background:#e4393c;}
+		#product .content .item{display:none;} 
+		#product .content .item.on{display: block;}
+	</style>
+</head>
+<body>
+<div id="product">
+	<ul>
+		<li class="on" index = '0'>商品介绍</li>
+		<li index = '1'>规格与包装</li>
+		<li index = '2'>售后保障</li>
+		<li index = '3'>商品评价</li>
+		<li index = '4'>社区互动</li>
+	</ul>
+	<div class="content">
+		<div class="item on">商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍</div>
+		<div class="item">规格与包装规格与包装规格与包装规格与包装规格与包装规格与包装</div>
+		<div class="item">售后保障售后保障售后保障售后保障售后保障售后保障售后保障售后保障</div>
+		<div class="item">商品评价商品评价商品评价商品评价商品评价商品评价商品评价商品评价</div>
+		<div class="item">社区互动社区互动社区互动社区互动社区互动社区互动社区互动社区互动社区互动</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		//获取nav导航dom
+		var nav = document.getElementsByTagName('li');
+		var item = document.getElementsByClassName('item');
+		//点击事件绑定
+		for(var i = 0; i < nav.length; i++){
+			nav[i].onclick = function(){
+				var curI = this.getAttribute('index');
+
+				//清除当前选中 菜单类名 on
+				for(var j = 0; j < nav.length; j++){
+					nav[j].setAttribute('class','');
+				}
+				//给予当前选中 菜单类名 on
+				this.setAttribute('class','on');
+
+				//清除当前选中 内容类名 on				
+			
+				for(var a = 0; a < nav.length; a++){
+					item[a].setAttribute('class','item');
+				}
+				item[curI].setAttribute('class','item on');	
+			}		
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import 'news';
+
+$size:20px;
+$f:(size:20px,family:Aile,color:#ff0);
+$color:red blue green black;
+$S:(size:12px, color:#ff0);
+
+div{
+	font-size:$size;
+	font-family:map-get($f,family);
+	border:map-keys($f);
+}
+@for $i from 1 to 4{
+	div#{$i}{
+		background-color:#ff0;
+	}
+}
+
+$i:1;
+@each $e in $color{
+	div#{$i}{
+		color:$e;
+	}
+	$i:$i+1;
+}
+@each $d in $S{
+	div{
+		font-size:nth($d,2);
+	}
+}

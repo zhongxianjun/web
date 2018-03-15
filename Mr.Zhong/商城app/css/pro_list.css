@@ -1,0 +1,71 @@
+.search{
+	width: 100%;
+	background: #f4f2f3;
+	padding-top:0.373333rem;
+	padding-bottom: 0.266667rem;
+}
+.search input{
+	width: 60%;
+	margin:0 auto;
+	display: block;
+	height: 0.88rem;
+	border:none;
+	background: #fff;
+	outline: none;
+	background: url(../images/pro_list_search.png) no-repeat;
+	background-size:0.453333rem 0.453333rem;
+	background-position: left 0.266667rem center;
+	background-color: #fff;
+	padding-left: 0.853333rem;
+}
+
+.rank{
+	width: 100%;
+	background: #f4f2f3;
+	clear: both;
+	overflow: hidden;
+	font-size:0;
+}
+.rank ul li{
+	float: left;
+	width: 25%;
+	background: #fff;
+	text-align: center;
+	height: 1.013333rem;
+	line-height: 1.013333rem;
+}
+.rank ul li a{
+	color:#4e4e4e;
+	font-size:0.4rem;
+	display:inline-block;
+	height: 1.013333rem;
+	line-height: 1.013333rem;
+}
+.rank ul li.on a{
+	color:#ee312b;
+}
+.rank ul li a.play_list img{
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-right: 0.2rem;
+}
+.rank ul li a.more img{
+	width: 0.293333rem;
+	height: 0.146667rem;
+	margin-bottom:0.133333rem;
+}
+.rank ul li a.price{
+	position: relative;
+}
+.rank ul li a.price span{
+	position: absolute;
+	right:-0.506667rem;
+	bottom:0.066667rem;
+}
+.rank ul li a.price span.up{
+	bottom:0.213333rem;
+}
+.rank ul li a.price span img{
+	width: 0.186667rem;
+	height: 0.12rem;
+}

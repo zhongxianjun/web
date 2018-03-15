@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>form表单2</title>
+</head>
+
+<body>
+	<form action="#" method="post">
+    	<label>
+        	&nbsp;&nbsp;&nbsp;&nbsp;手机号<input type="tel" name="phonenumble" />
+        </label>
+        <br /><br />
+        <label>
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昵称<input type="text" name="nickname" />
+        </label>
+        <br /><br />
+        <label>
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码<input type="password" name="mypassword" />
+        </label>
+        <br /><br />
+        <label>
+        	确认密码<input type="password" name="confirmpassword" />
+        </label>
+        <br /><br />
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别<label>
+            <input type="radio" name="sex" value="nan" checked/>男
+            </label>
+            <label>
+            <input type="radio" name="sex" value="nv"/>女
+            </label>
+        <br /><br />
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生日
+            <select name="calendartype">
+            	<option name="01" selected>公历</option>
+                <option name="02">农历</option>
+            </select>
+            <select name="year">
+            	<option name="01">1995</option>
+                <option name="02">1996</option>
+                <option name="03">1997</option>
+                <option name="04" selected>1998</option>
+                <option name="05">1999</option>
+                <option name="06">2000</option>
+            </select>年
+            <select name="month">
+            	<option name="一月" selected>01</option>
+                <option name="二月">02</option>
+                <option name="三月">03</option>
+                <option name="四月">04</option>
+                <option name="五月">05</option>
+                <option name="六月">06</option>
+                <option name="七月">07</option>
+                <option name="八月">08</option>
+                <option name="九月">09</option>
+                <option name="十月">10</option>
+                <option name="十一月">11</option>
+                <option name="十二月">12</option>
+            </select>月
+            <select name="data">
+            	<option name="001">1-10</option>
+                <option name="002">11-20</option>
+                <option name="003">21-31</option>
+            </select>日
+        <br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;所在地
+        	<select name="countries">
+            	<option name="China" selected>中国</option>
+                <option name="US">美国</option>
+                <option name="Russia">俄罗斯</option>
+                <option name="British">英国</option>
+            </select>
+            <select name="provinces">
+            	<option name="hunan" selected>湖南</option>
+                <option name="beijing">北京</option>
+                <option name="guangdong">广东</option>
+                <option name="hainan">海南</option>
+            </select>
+            <select name="cities">
+            	<option name="changsha" selected>长沙</option>
+                <option name="shaoyang">邵阳</option>
+                <option name="loudi">娄底</option>
+            </select>
+        <br /><br />
+        <input type="checkbox" name="Timeopened" checked/>限时开通QQ空间
+        <br /><br />
+        <input type="checkbox" name="related" checked/>我已阅读并同意相关服务条款
+        <br /><br />
+        <button name="submit">立即注册</button>
+    </form>
+</body>
+</html>

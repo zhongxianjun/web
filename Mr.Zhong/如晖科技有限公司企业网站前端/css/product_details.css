@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+.product_details{
+	width:1200px;
+	margin:0 auto;
+	margin-top:24px;
+	margin-bottom:66px;
+	clear:both;
+	overflow:hidden;	
+	}
+.product_details .location{
+	float:right;
+	}
+.product_details .location a{
+	float:left;
+	font-family:"宋体";
+	font-size:14px;
+	color:#666;
+	padding-left:28px;
+	background:url(../images/nav_bg.png) 8px center no-repeat;
+	}
+.product_details .location a:first-child{
+	background:none;
+	}
+.product_details .location a:hover,.product_details .location a.on{
+	color:#ff0c06;
+	}
+.product_details .title{
+	width:318px;
+	margin:0 auto;
+	margin-top:46px;
+	text-align:center;
+	}
+.product_details .title h2{
+	font-family:"微软雅黑";
+	font-size:32px;
+	color:#999;
+	font-weight:normal;
+	}
+.product_details .title h1{
+	font-family:"微软雅黑";
+	font-size:40px;
+	color:#000;
+	font-weight:normal;
+	margin-top:12px;
+	}
+.product_details .title h1:before{
+	content:'';
+	display:inline-block;
+	width:76px;
+	height:40px;
+	background:url(../images/bg.png) 0 6px no-repeat;
+	}
+.product_details .title h1:after{
+	content:'';
+	display:inline-block;
+	width:76px;
+	height:40px;
+	background:url(../images/bg.png) 14px 6px no-repeat;
+	}
+.product_details .main{
+	width:1200px;
+	margin:0 auto;
+	margin-top:65px;
+	clear:both;
+	overflow:hidden;
+	}
+.product_details .main .left{
+	width:768px;
+	min-height:572px;
+	float:left;
+	}
+.product_details .main .left .pic{
+	margin-bottom:46px;
+	min-height:400px;
+	}
+.product_details .main .left .pic img{
+	float:left;
+	margin:0 9px 36px;
+	}
+.product_details .main .left .pic img:first-child{
+	margin-right:20px;
+	}
+.product_details .main .left .text{
+	float:left;
+	margin-bottom:60px;
+	margin-left:9px;
+	}
+.product_details .main .left .text p{
+	font-family:"宋体";
+	font-size:14px;
+	color:#666;
+	margin-bottom:12px;
+	}
+
+
+.product_details .main .sidebar{
+	width:270px;
+	min-height:322px;
+	float:right;
+	}
+.product_details .main .sidebar h3{
+	font-family:"微软雅黑";
+	font-size:24px;
+	color:#fff;
+	font-weight:normal;
+	background:#ff9f7e;
+	text-align:center;
+	padding:26px 0;
+	}
+.product_details .main .sidebar h3 span{
+	font-size:18px;
+	display:block;
+	margin-top:8px;
+	}
+.product_details .main .sidebar ol li{
+	text-align:center;
+	background:#d9f4ff;
+	margin-top:3px;
+	}
+.product_details .main .sidebar ol li a{
+	font-family:"微软雅黑";
+	font-size:18px;
+	color:#333;
+	display:block;
+	padding:16px 0;
+	}
+.product_details .main .sidebar ol li a:hover,.product_details .main .sidebar ol li a.on{
+	color:#db6941;
+	}

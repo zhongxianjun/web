@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>form表单1</title>
+</head>
+
+<body>
+	<form action="#" method="post">
+    	<label>
+        	姓名：<input type="text" name="username"/>
+        </label>
+        <br /><br />
+        <label>
+        	密码：<input type="password" name="password"/>
+        </label>
+        <br /><br />
+        	性别：<label><input type="radio" name="sex" value="nan" checked/>男</label>
+        		 <label><input type="radio" name="sex" value="nv"/>女</label>
+        <br /><br />
+        	兴趣：<label>旅游<input type="checkbox" name="旅游" /></label>
+            	 <label>运动<input type="checkbox" name="运动"/></label>
+                 <label>唱歌<input type="checkbox" name="唱歌"/></label>
+                 <label>跳舞<input type="checkbox" name="跳舞"/></label>
+                 <label>听音乐<input type="checkbox" name="听音乐"/></label>
+        <br /><br />
+        	来自：<select name="area">
+            		<option name="001">北京</option>
+                    <option name="002">天津</option>
+                    <option name="003" selected>湖南</option>
+                    <option name="004">广东</option>
+            	 </select>
+        <br /><br />
+        	<label>
+        		QQ：<input type="text" name="qqnumble"/>
+        	</label>
+        <br /><br />
+        	<label>
+        		email：<input type="email" name="emailaddress" value="@qq.com"/>
+        	</label>
+        <br /><br />
+        	<label>
+            	内容：<textarea style="resize:none; vertical-align:top; width:500px; height:80px;" name="content"></textarea>
+            </label>
+        <br /><br />
+         <button name="submit">提交</button>
+         <button name="reset">重置</button>
+    </form>
+</body>
+</html>

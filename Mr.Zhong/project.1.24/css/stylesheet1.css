@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.title{
+	text-align:center;
+	line-height:81px;
+	font-family:"微软雅黑"; 
+	font-size:24px; 
+	text-decoration:underline; 
+	font-style:italic; 
+	color:#3995f2; 
+	background:#d2d3d3; 
+	vertical-align:middle;
+	}
+.text{
+	font-family:"宋体";
+	color:#ce9600;
+	font-size:16px;
+	text-indent:2em;
+	line-height:40px;
+	letter-spacing:4;
+	margin-top:55px;
+	}
+.content{
+	font-family:"微软雅黑";
+	color:#333;
+	font-size:14px;
+	text-indent:2em;
+	margin:52px 0 72px 0;
+	}
+.content span{
+	font-weight:bold;
+	color:#ff0000;
+	font-style:italic;
+	}
+#box,.link{
+	font-family:"微软雅黑";
+	color:#fefefe;
+	font-size:14px;
+	background:#3995f2;
+	display:block;
+	width:400px;
+	height:90px;
+	text-align:center;
+	line-height:90px;
+	}
+.link{
+	background:#ce9600;
+	text-decoration:none;
+	margin:62px 0 74px 0;
+	}
+.pic img{
+	margin-right:14px;
+	vertical-align:middle;
+	}
+.pic span{
+	font-family:"微软雅黑";
+	color:#3995f2;
+	font-size:14px;
+	}
+.bgcolor{
+	font-family:"微软雅黑";
+	color:#fbfbfb;
+	font-size:18px;
+	background:#3995f2;
+	text-align:center;
+	line-height:102px;
+	margin:16px 0 18px 0;
+	}
+.background{
+	font-family:"微软雅黑";
+	color:#9fc743;
+	font-size:36px;
+	text-align:center;
+	line-height:374px;
+	background:url(../images/02.jpg) no-repeat;
+	}
+.Mytitle{
+	font-family:"微软雅黑";
+	color:#82b007;
+	font-size:30px;
+	font-weight:normal;
+	margin:44px 0 38px 0;
+	}
+.paragraph{
+	font-family:"微软雅黑";
+	color:#82b007;
+	font-size:30px;
+	margin-bottom:54px;
+	}

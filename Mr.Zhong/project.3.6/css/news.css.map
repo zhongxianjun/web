@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGC,OAAU;EACT,MAAM,EAJW,cAAc;;;AAGhC,OAAU;EACT,MAAM,EAJoC,cAAc;;;AAGzD,OAAU;EACT,MAAM,EAJ6D,cAAc",
+"sources": ["../scss/news.scss"],
+"names": [],
+"file": "news.css"
+}

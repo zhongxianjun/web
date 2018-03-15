@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+.company{
+	width:1166px;
+	margin:0 auto;
+	margin-top:28px;
+	clear:both;
+	overflow:hidden;
+	}
+.title{
+	text-align:center;
+	width:1166px;
+	}
+.title h1{
+	font-family:"微软雅黑";
+	color:#323131;
+	font-size:20px;
+	font-weight:normal;
+	}
+.title h2{
+	font-family:"宋体";
+	color:#a8a5a6;
+	font-size:14px;
+	font-weight:normal;
+	}
+.title span{
+	display:block;
+	width:40px;
+	height:4px;
+	background:#7ac244;
+	margin:5px auto 0;
+	border-radius:2px;
+	behavior:url(PIE.htc);
+	}
+.company h3{
+	text-align:center;
+	font-family:"宋体";
+	color:#030303;
+	font-size:18px;
+	font-weight:normal;
+	margin-top:30px;
+	}
+.company>p{
+	text-align:center;
+	font-family:"宋体";
+	color:#adaeb0;
+	font-size:14px;
+	}
+.company .content{
+	width:1166px;
+	margin-top:54px;
+	}
+.company .content img{
+	float:left;
+	}
+.company .content .text{
+	width:588px;
+	float:right;
+	}
+.company .content .text p{
+	font-family:"宋体";
+	color:#2b2c2b;
+	font-size:12px;
+	line-height:24px;
+	text-indent:2em;
+	}
+.company .content .text p:first-child{
+	margin-bottom:26px;
+	}
+
+
+.service{
+	width:1174px;
+	margin:0 auto;
+	margin-top:60px;
+	clear:both;
+	overflow:hidden;
+	}
+.service ul{
+	width:1166px;
+	margin-top:45px;
+	}
+.service ul li{
+	width:380px;
+	float:left;
+	margin:0 4px;
+	}
+.service ul li .text{
+	min-height:294px;
+	border-top:2px solid #c6dee1;
+	border-right:1px solid #d2d3d3;
+	border-bottom:2px solid #c6dee1;
+	border-left:1px solid #d2d3d3;
+	margin:4px 0;
+	}
+.service ul li img{
+	margin:4px 0;
+	display:inline-block;
+	}
+.service ul li .text h5 a{
+	font-family:"宋体";
+	font-size:14px;
+	color:#040404;
+	font-weight:normal;
+	display:inline-block;
+	margin:42px 0 6px 25px;
+	}
+.service ul li .text p{
+	font-family:"宋体";
+	font-size:12px;
+	color:#595858;
+	line-height:24px;
+	text-indent:2em;
+	margin-left:25px;
+	margin-right:25px;
+	}
+.service ul li .text>a{
+	font-family:"宋体";
+	font-size:12px;
+	color:#595858;
+	display:block;
+	margin-left:25px;
+	margin-top:26px;
+	}
+.service ul li .text:hover{
+	background:#75c03c;
+	}
+.service ul li .text:hover a{
+	color:#fff;
+	}
+.service ul li .text:hover p{
+	color:#fefefe;
+	}
+
+
+.dynamic{
+	width:1166px;
+	margin:46px auto 0;
+	}
+.dynamic ul{
+	display:inline-block;
+	width:432px;
+	margin:40px 58px 0 0;
+	}
+.dynamic ul li{
+	margin:0 0 38px 0;
+	}
+.dynamic ul li h3 a{
+	font-family:"宋体";
+	color:#020202;
+	font-size:14px;
+	text-indent:none;
+	font-weight:normal;
+	}
+.dynamic ul li p{
+	font-family:"宋体";
+	color:#626161;
+	font-size:12px;
+	line-height:24px;
+	text-indent:2em;
+	margin-top:10px;
+	}
+.dynamic img{
+	margin-top:40px;
+	}

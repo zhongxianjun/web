@@ -1,0 +1,130 @@
+﻿*{
+	margin:0;
+	padding:0;
+}
+ul{ list-style:none;}
+a{ text-decoration:none;}
+body{ min-width:325px;}
+
+
+$size:14px,32px,2em;
+$color:#333,#666,pink;
+.header{
+	width:1200px;
+	margin:0 auto;
+	clear:both;
+	overflow:hidden;
+	ul li{
+		float:left;
+		width:60px;
+		font-size:nth($size,1);
+		line-height:nth($size,2);
+		text-align:center;
+		a{
+			color:nth($color,1);
+			display:block;
+			font-family:'微软雅黑';
+			&.on,&:hover{
+				background:nth($color,3);
+			}
+		}
+	}
+}
+
+
+.main{
+	width:1200px;
+	margin:0 auto;
+	clear:both;
+	overflow:hidden;
+	.content{
+		float:left;
+		width:800px;
+		img{
+			width:100%;
+			height:800px;
+		}
+		p{
+			font-size:nth($size,1);
+			line-height:nth($size,3);
+			color:nth($color,2);
+		}
+	}
+	.like{
+		float:right;
+		width:300px;
+		ul li{
+			float:left;
+			margin:10px;
+			a{
+				display:block;
+			}
+		}
+	}
+}
+
+//1200px 768px  480px  325px
+// 768px <= x <1200px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.header{
+		width:100%;
+	}
+	.main{
+		width:100%;
+		margin:0;
+		.content{
+			width:60%;
+		}
+		.like{
+			width:30%;
+		}
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.header{
+		width:100%;
+		ul{
+			display:none;
+		}
+	}
+	.main{
+		width:100%;
+		margin:0;
+		.content{
+			width:100%;
+			clear:both;
+			overflow:hidden;
+		}
+		.like{
+			width:100%;
+			margin-top:20px;
+			ul {
+				display:flex;
+				justify-content:space-around;
+				li{
+					flex-flow: row nowrap;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 325px) and (max-width: 479px) {
+	.header{
+		ul{
+			display:none;
+		}
+	}
+
+	.main{
+		width:100%;
+		margin:0;
+		.content{
+			width:100%;
+			clear:both;
+			overflow:hidden;
+		}
+		.like{
+			display:none;
+		}
+	}
+}

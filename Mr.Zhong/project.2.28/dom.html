@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		*{padding: 0; margin: 0;}
+	</style>
+	<title>dom操作</title>
+</head>
+<body>
+	<div id="box" style="background: blue; width:200px; height: 200px;position: absolute; top: 200px; left: 400px;"></div>
+	<script type="text/javascript">
+		// var box = document.getElementById('box');
+		// box.onmousemove = function(e){
+		// 	console.log(e.y);
+		// 	//alert('six');
+		// }
+		var box = document.getElementById('box');
+		window.onkeydown = function(e){
+			switch(e.key){
+				case 'w':
+					box.style.top = Math.max(0,box.offsetTop - 10)+"px";	
+				break;
+				case 'd':
+					box.style.left = Math.max(0,box.offsetLeft + 10)+"px";
+				break;
+				case 's':
+					box.style.top = Math.max(0,box.offsetTop + 10)+"px";
+				break;
+				case 'a':
+					box.style.left = Math.max(0,box.offsetLeft - 10)+"px";
+				break;
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0px; padding:0px;}
+a { text-decoration:none; blr:expression(this.onFocus=this.blur()); outline:none;}
+a:focus{ outline:none;}
+img{ border:none;}
+li{list-style:none;}
+
+
+#banner{
+	width:100%;
+	height:450px;
+	margin:0 auto;
+	position:relative;
+	}
+#banner ul li{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	}
+#banner ul li img{
+	width:100%;
+	height:450px;
+	}
+#banner .link{
+	width:1200px;
+	height:50px;
+	position:absolute;
+	left:50%;
+	margin-left:-600px;
+	top:200px;
+	z-index:2;
+	}
+#banner .link #prev{
+	background:url(../images/prev.png);
+	width:40px;
+	height:50px;
+	float:left;
+	}
+#banner .link #next{
+	background:url(../images/next.png);
+	width:40px;
+	height:50px;
+	float:right;
+	}
+#banner #num{
+	width:156px;
+	height:26px;
+	position:absolute;
+	z-index:2;
+	left:50%;
+	margin-left:-78px;
+	bottom:20px;
+	}
+#banner #num span{
+	border:1px solid #081625;
+	width:24px;
+	height:24px;
+	display:inline-block;
+	margin:0 13px;
+	border-radius:50%;
+	behavior:url(PIE.htc);
+	cursor:pointer;
+	}
+#banner #num span:hover{
+	border-color:#ec6941;
+	background:#ec6941;
+	}
+#banner #num span.on{
+	border-color:#ec6941;
+	background:#ec6941;
+	}
+
+
+
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+#dituContent{width:1200px;height:508px;border:#ccc solid 1px; margin:0 auto;}

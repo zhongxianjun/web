@@ -1,0 +1,132 @@
+*{margin:0;padding:0;}
+a{text-decoration: none;}
+ul{list-style: none;}
+img{border:none;}
+
+.header{
+	width:100%;
+	background:#ee312b;
+	padding:0.346667rem 0;
+	clear:both;
+	overflow: hidden;
+	position: relative;
+}
+.header a{
+	color:#fff;
+	font-size: 0.346667rem;
+	font-family: "微软雅黑";
+	position: absolute;
+	padding-left:0.266667rem;
+}
+
+.header .ret{top:0.32rem;left: 0.4rem;}
+.header .ret img{width: 50%;height:50%;}
+.header .reg{top:0.373333rem;right:0.826667rem}
+.header .reg img{width: 50%;height: 50%;float: right;}
+.header h1{
+	color:#fff;
+	font-size: 0.426667rem;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	width: 78%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer_nav{
+	width: 100%;
+	position: fixed;
+	bottom: 0.0rem;
+	left: 0.0rem;
+	clear: both;
+	overflow:hidden;
+	background:#fff;
+}
+.footer_nav li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	height: 1.306667rem;
+	font-size: 0;
+	padding-top:0.16rem;
+
+}
+.footer_nav li img{
+	width: 0.586667rem;
+	height: 0.586667rem;
+	font-size: 0;
+}
+.footer_nav li a span{
+	font-size: 0.346667rem;
+	color:#333333;
+	font-family: "微软雅黑";
+	display:block;
+	margin:0 auto;
+	margin-top:0.053333rem;
+}
+.footer_nav li a{position: relative;}
+.footer_nav li.on a span{
+	color:#ee312b;
+}
+
+
+
+.order{
+	padding: 0 3%;
+	background-color: #fff;
+	border-bottom:1px solid #dedede;
+	clear:both;
+	overflow: hidden;
+	padding-bottom: 0.24rem;
+}
+.order .pro{
+	float: left;
+	width: 1.706667rem;
+	height: 1.706667rem
+}
+.order .pro img{
+	width: 1.706667rem;
+	height: 1.706667rem;
+	margin-top:0.186667rem;
+}
+.order .info{
+	float: right;
+	width: 76.5%;
+
+}
+.order .info h2{
+	font-size:0.346667rem;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	clear:both;
+	overflow: hidden;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.order .info h2 a{color:#333333;}
+.order .info h2 span{
+	color:#999999;
+	font-size:0.24rem;
+	text-decoration: line-through;
+	float: right;
+}
+.order .info p{
+	color:#999999;
+	font-size:0.32rem;
+	font-family: "微软雅黑";
+	clear:both;
+	overflow: hidden;
+}
+.order .info p span{
+	color:#ee312b;
+	font-size:0.373333rem;
+	float: right;
+}
+.order .info i{
+	color:#999999;
+	font-size:0.32rem;
+	font-family: "微软雅黑";
+	float: right;
+	font-style: normal;
+	margin-top:0.213333rem;
+}

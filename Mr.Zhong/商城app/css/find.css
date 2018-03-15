@@ -1,0 +1,49 @@
+.recommend h1 a{
+	color:#ee312b;
+}
+.find_banner{
+	width: 94%;
+	margin: 0 auto;
+}
+.find_banner>a>img{
+	width: 100%;
+}
+.find_banner h1{
+	width: 94%;
+	margin:0 auto;
+	height: 1.12rem;
+	line-height: 1.12rem;
+	font-size: 0.453333rem;
+	font-family: "微软雅黑";
+	color:#333;
+	font-weight: normal;
+}
+.find_banner h1 a{
+	font-size: 0.4rem;
+	color:#ee312b;
+	float:right;
+}
+.find_banner h1 a img{
+	width: 0.333333rem;
+	height: 0.173333rem;
+	vertical-align: middle;
+	margin-left: 0.066667rem;
+}
+
+.footer_nav li a i{
+	color:#fff;
+	font-size:0.266667rem;
+	font-family: "黑体";
+	font-style: normal;
+	display:block;
+	height: 0.266667rem;
+	width: 0.266667rem;
+	line-height: 0.266667rem;
+	border:1px solid #ee312b;
+	background: #ee312b;
+	border-radius:0.266667rem;
+	position: absolute;
+	top:-42px;
+	right:-14px;
+	z-index: 99999;
+}

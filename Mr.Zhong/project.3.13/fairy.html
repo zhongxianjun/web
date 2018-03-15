@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+	<title>css3+animation+requestAnimationFrame</title>
+	<style type="text/css">
+		#fairy{
+			width: 135px;
+			height: 100px;
+			background: url(images/girl_63090bc.png) no-repeat;
+		}
+	</style>
+</head>
+<body>
+<div class="main" style="background:pink;width: 135px;height: 100px;">
+	<div id="fairy"></div>
+</div>
+	<script type="text/javascript">
+		var s = 1,
+			t = 1;
+		+function run(){
+			var timmer = setTimeout(function(){
+				var fairy = document.getElementById('fairy');
+				if(s <= 5){
+						fairy.style.backgroundPositionX = -135 * s +"px";
+						s++;
+					}else{
+						s = 1;
+						fairy.style.backgroundPositionX = 0 +"px";
+						if(t <= 7){
+							fairy.style.backgroundPositionY = -100 * t +"px";
+							t++;
+						}else{
+							t = 1;
+							fairy.style.backgroundPositionY = 0 +"px";
+						}
+					}
+				run();
+			},80)
+		}();
+	</script>
+</body>
+</html>

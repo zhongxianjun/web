@@ -1,0 +1,7 @@
+$borders:(border01:1px solid #ff0, border02:2px solid #f00, border03:3px solid #000);
+
+@each $b1 in $borders{
+	.#{border}{
+		border:nth($b1,2);
+	}
+}

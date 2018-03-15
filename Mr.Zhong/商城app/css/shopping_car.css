@@ -1,0 +1,131 @@
+body{
+	width:100%;
+	background: #f4f2f3;
+}
+
+.title{
+	clear: both;
+	overflow: hidden;
+	border-bottom:1px solid #dedede;
+	border-top:1px solid #dedede;
+	height:1.173333rem;
+	line-height:1.173333rem ;
+	background: #fff;
+	margin-top:0.533333rem;
+}
+.title form{
+	float: left;
+	height: 0.746667rem;
+	line-height: 0.746667rem;
+	margin-right: 0.266667rem;
+	padding-left:3%;
+}
+.title h1{
+	font-family:"微软雅黑";
+	font-size:0.373333rem;
+	color:#333;
+	float: left;
+	font-weight: normal;
+}
+
+.order .info form{
+	font-size: 0
+}
+.order .info form input{
+	width: 0.613333rem;
+	height: 0.613333rem;
+	text-align: center;
+	line-height: 0.613333rem;
+	background: #f4f2f3;
+	border:none;
+	outline: none;
+	font-size: 0.32rem;
+	color:#333333;
+	font-family: "微软雅黑";
+	float: left;
+	margin:0 0.133333rem;
+}
+.order .info form span{
+	width: 0.613333rem;
+	height: 0.613333rem;
+	text-align: center;
+	line-height: 0.613333rem;
+	background: #f4f2f3;
+	font-size:0.48rem;
+	color:#ee312b;
+	font-family: "微软雅黑";
+	display:inline-block;
+	float: left;
+}
+.order .info form span:first-child{
+	color:#cecece;
+}
+
+.new{
+	width:94%;
+	padding:0.533333rem 3%;
+	font-size: 0;
+	background: url(../images/line.png) no-repeat;
+	background-size:100% 0.173333rem;
+	background-position: left bottom;
+	background-color: #fff;
+}
+.new form input{width:15px;height:15px;}
+.new form span{font-size:13px;font-family:"宋体";color:#4e4e4e;margin-left:8px;}
+
+.clearing{
+	clear:both;
+	overflow: hidden;
+	font-size: 0;
+	min-height: 1.573333rem;
+	background: #fff;
+	margin-top:0.266667rem;
+	padding:0 3%;
+}
+.clearing form{width: 30%;float: left;margin-top:0.506667rem;}
+.clearing form input{width:15px;height:15px;vertical-align:middle;float: left;}
+.clearing form span{font-size:14px;font-family: 宋体;color:#333;
+	float: left;margin-left: 0.213333rem}
+.clearing .text{
+	float: left;
+	width: 36%;
+	margin-top:0.266667rem;
+}
+.clearing .text p{
+	font-size:11px;
+	font-family: "宋体";
+	color:#666;
+}
+.clearing .text p:first-child{font-size:13px;font-family: 宋体;
+	color:#ee312b;margin-bottom: 4px;}
+.clearing>a{
+	width: 2.4rem;
+	height:0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size:0.373333rem;
+	font-family: "宋体";
+	color:#fff;
+	background: #ee312b;
+	display:inline-block;
+	float: left;
+	margin-top:0.266667rem;
+	border-radius: 0.106667rem;
+}
+.footer_nav li a i{
+	color:#fff;
+	font-size:0.266667rem;
+	font-family: "黑体";
+	font-style: normal;
+	display:block;
+	height: 0.266667rem;
+	width: 0.266667rem;
+	line-height: 0.266667rem;
+	border:1px solid #ee312b;
+	background: #ee312b;
+	border-radius:0.266667rem;
+	position: absolute;
+	top:-42px;
+	right:-14px;
+	z-index: 99999;
+}

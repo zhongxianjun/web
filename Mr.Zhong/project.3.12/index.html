@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*//the first
+		var email = "qyl@163.com";
+		var str01 = email.indexOf("@");
+		console.log(email.substr(str01+1,email.length));
+
+	//the second
+		var bArr = email.split("@");
+		console.log(bArr[1]);
+
+	//the third
+		var str02 = email.lastIndexOf("@");
+		console.log(email.substr(str02+1,email.length));
+
+	var url = "http://www.web.com/?name=杨赞&age=18&sex=女";	
+	var tempStr = url.indexOf("?");
+	var len = url.substr(tempStr+1,url.length);
+	var tempArr = len.split("&");	//["name=杨赞","age=18","sex=女"]
+	var result = [];
+	// for(var i = 0; i <= tempArr.length-1; i++){
+	// 	result.push(tempArr[i].split("=")[1]);
+	// }
+	// console.log(result);
+	tempArr.map(function(elem,index) {
+		result.push(elem.split("=")[1]);
+	});
+	console.log(result);
+
+
+	//array=[1,2,3,4,5]以字符串形式表示出来，以#连接。
+	var tempArr = [1,2,3,4,5];
+	var result = '';
+	tempArr.map(function(elem,index) {
+		result += elem + "#";
+	});
+	console.log(result.substr(0,result.length-1));
+
+
+	//array=[a,b,c]倒过来排序。
+	var tempArr = ['a','b','c','d','e','f','g'];
+	var result = [];
+	for (var i = 0; i <= tempArr.length-1; ) {
+		result.push(tempArr.pop());
+	}
+	console.log(result);*/
+
+	var tempArr = ['a','b','c','d','e','f','g'];
+	var tempArray = [1,2,3,4,5];
+	var result = [];
+	// console.log(result.concat(tempArr,0,1));
+	// console.log(tempArr.join('#'));
+	// console.log(tempArr.pop());
+	//console.log(tempArr.push(tempArray));
+	// console.log(tempArr.reverse());
+	// console.log(tempArr.shift());
+	// console.log(tempArr.slice(1, 5));
+	console.log();
+	</script>
+</body>
+</html>

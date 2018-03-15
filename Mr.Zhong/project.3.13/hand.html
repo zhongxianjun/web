@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>css3+animation+requestAnimationFrame</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+	<style type="text/css">
+		#hand{
+			width: 220px;
+			height: 180px;
+			background: url(images/handtip_2a217ef.png) no-repeat;
+			background-color: black;
+		}
+		form{
+			width:220px;
+		}
+		button{
+			width:100px;
+			line-height:30px;
+			border: none;
+			outline: none;
+			margin-top: 50px;
+		}
+		#stop{
+			float: left;
+		}
+		#star{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="hand">
+
+	</div>
+	<form>
+		<button type="button" id="stop">暂停</button>
+		<button type="button" id="star">继续</button>
+	</form>
+	<script type="text/javascript">
+		var aArr = [0,220,440],
+			bArr = [0,200];
+		var i = 0 ,
+			j = 0 ;
+		var hand = document.getElementById('hand');
+		var timmer = setInterval(function(){
+			if(i<2){
+				i++;
+				hand.style.backgroundPositionX = -aArr[i] +'px';
+			}else{
+					i=0;
+					hand.style.backgroundPositionX = -aArr[i] +'px';
+					if(j<1){
+						j++;
+						hand.style.backgroundPositionY = -bArr[j] +'px';
+					}else{ 
+						j=0;
+						hand.style.backgroundPositionY = -bArr[j] +'px';
+					}
+				}	
+			},100);
+		var stop = document.getElementById('stop');
+		stop.onclick = function(){
+			clearInterval(timmer);
+			timmer++;
+		}
+		var star = document.getElementById('star');
+		star.onclick = function(){
+			timmer = setInterval(function(){
+			if(i<2){
+				i++;
+				hand.style.backgroundPositionX = -aArr[i] +'px';
+			}else{
+					i=0;
+					hand.style.backgroundPositionX = -aArr[i] +'px';
+					if(j<1){
+						j++;
+						hand.style.backgroundPositionY = -bArr[j] +'px';
+					}else{ 
+						j=0;
+						hand.style.backgroundPositionY = -bArr[j] +'px';
+					}
+				}	
+			},100);
+		}	
+	</script>
+</body>
+</html>

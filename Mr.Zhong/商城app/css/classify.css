@@ -1,0 +1,78 @@
+.content{
+	font-size: 0;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+.content .sidebar{
+	float: left;
+	width: 2.453333rem;
+}
+.content .sidebar ul li{
+	list-style: none;
+	width: 2.453333rem;
+	height: 1.546667rem;
+	line-height: 1.546667rem;
+	background: #f7f7f7;
+	text-align: center;
+	border-bottom: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.content .sidebar ul li.on{
+	background: #fff;
+	border-right:1px solid #fff;
+}
+.content .sidebar ul li.on a{
+	color:#ee312b;
+}
+.content .sidebar ul li a{
+	color:#333333;
+	font-size: 0.4rem;
+	font-family: "微软雅黑";
+}
+
+.content .sort{
+	width: 66%;
+	float: right;
+	margin-top:0.266667rem;
+}
+.content .sort .banner{
+	width: 100%;
+}
+.content .sort .banner img{
+	width: 100%;
+}
+.content .sort .classes{
+	width: 100%;
+	margin-top:0.213333rem;
+}
+.content .sort .classes h4{
+	font-size: 0.373333rem;
+	color:#666666;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	height:0.8rem;
+	line-height: 0.8rem;
+}
+.content .sort .classes ul{
+	width: 94%;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-around;
+}
+.content .sort .classes li{
+	width: 30%;
+}
+.content .sort .classes li img{
+	width: 1.826667rem;
+}
+.content .sort .classes li span{
+	font-size: 0.346667rem;
+	color:#666666;
+	font-family: "微软雅黑";
+	text-align: center;
+	display:block;
+	height: 0.533333rem;
+	line-height: 0.533333rem;
+	margin-bottom: 0.24rem;
+}

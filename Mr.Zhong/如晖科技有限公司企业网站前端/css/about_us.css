@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+.about_us{
+	width:100%;
+	margin-top:24px;
+	clear:both;
+	overflow:hidden;	
+	}
+.about_us .top{
+	width:1200px;
+	margin:0 auto;
+	}
+.about_us .top .location{
+	float:right;
+	background:url(../images/nav_bg.png) 92px center no-repeat;
+	}
+.about_us .top .location a{
+	float:left;
+	font-family:"宋体";
+	font-size:14px;
+	color:#666;
+	margin-left:28px;
+	}
+.about_us .top .location a:hover,.about_us .location a.on{
+	color:#ff0c06;
+	}
+.about_us .top .title{
+	width:318px;
+	margin:0 auto;
+	margin-top:46px;
+	text-align:center;
+	}
+.about_us .top .title h2{
+	font-family:"微软雅黑";
+	font-size:32px;
+	color:#999;
+	font-weight:normal;
+	}
+.about_us .top .title h1{
+	font-family:"微软雅黑";
+	font-size:40px;
+	color:#000;
+	font-weight:normal;
+	margin-top:12px;
+	}
+.about_us .top .title h1:before{
+	content:'';
+	display:inline-block;
+	width:76px;
+	height:40px;
+	background:url(../images/bg.png) 0 6px no-repeat;
+	}
+.about_us .top .title h1:after{
+	content:'';
+	display:inline-block;
+	width:76px;
+	height:40px;
+	background:url(../images/bg.png) 14px 6px no-repeat;
+	}
+.about_us .middle{
+	width:1200px;
+	margin:0 auto;
+	margin-top:74px;
+	margin-bottom:188px;
+	clear:both;
+	overflow:hidden;
+	}
+.about_us .middle .left{
+	width:812px;
+	float:left;
+	margin-left:22px;
+	}
+.about_us .middle .left h2{
+	font-family:"微软雅黑";
+	font-size:24px;
+	color:#333;
+	font-weight:normal;
+	}
+.about_us .middle .left p{
+	font-family:"宋体";
+	font-size:14px;
+	color:#666;
+	line-height:36px;
+	text-indent:2em;
+	}
+.about_us .middle .sidebar{
+	width:270px;
+	min-height:322px;
+	float:right;
+	}
+.about_us .middle .sidebar h3{
+	font-family:"微软雅黑";
+	font-size:24px;
+	color:#fff;
+	font-weight:normal;
+	background:#ff9f7e;
+	text-align:center;
+	padding:26px 0;
+	}
+.about_us .middle .sidebar h3 span{
+	font-size:18px;
+	display:block;
+	margin-top:8px;
+	}
+.about_us .middle .sidebar ul li{
+	text-align:center;
+	background:#d9f4ff;
+	margin-top:3px;
+	}
+.about_us .middle .sidebar ul li a{
+	font-family:"微软雅黑";
+	font-size:18px;
+	color:#333;
+	display:block;
+	padding:16px 0;
+	}
+.about_us .middle .sidebar ul li a:hover,.about_us .middle .sidebar ul li a.on{
+	color:#db6941;
+	}
+.about_us .bottom{
+	width:100%;
+	clear:both;
+	overflow:hidden;
+	margin-bottom:11px;
+	position:relative;
+	}
+.about_us .bottom .pic{
+	width:1200px;
+	margin:0 auto;
+	position:absolute;
+	top:0;
+	left:112px;
+	z-index:2;
+	}
+.about_us .bottom .pic img{
+	margin-left:90px;
+	}
+.about_us .bottom .pic img:first-child{
+	margin-left:17px;
+	}
+.about_us .bottom .background{
+	width:100%;
+	background:#8de0fe;
+	min-height:274px;
+	margin-top:166px;
+	z-index:1;
+	}

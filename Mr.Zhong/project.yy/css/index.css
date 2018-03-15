@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.company{width:1200px;margin:0 auto;clear:both;overflow:hidden;}
+.title{width:1200px;margin-top:58px;}
+.title h3{font-family:"微软雅黑";font-size:28px;color:#000;font-weight:normal;text-align:center;background:url(../images/title.png) no-repeat center;min-height:70px;line-height:46px;}
+.title h3:before{content:'';display:inline-block;width:500px;border-bottom:1px solid #e38c1e;float:left;margin-top:23px;}
+.title h3:after{content:'';display:inline-block;width:498px;border-bottom:1px solid #e38c1e;float:right;margin-top:23px;}
+.company img{margin-top:8px;margin-right:54px;}
+.company .content{width:494px;display:inline-block;float:right;min-height:406px;margin-top:54px;margin-right:40px;}
+.company .content p{font-family:"微软雅黑";font-size:16px;color:#333;line-height:24px;margin:10px 0;text-indent:2em;}
+
+
+.news{width:1200px;margin:0 auto;clear:both;overflow:hidden;}
+.news .link{width:500px;float:left;margin-top:35px;margin-left:18px;}
+.news .link h4{font-family:"微软雅黑";font-size:18px;font-weight:normal;color:#000;background:url(../images/news-title.png) no-repeat left;min-height:58px;line-height:42px;padding-left:18px;}
+.news .link ul{width:498px;margin-top:8px;display:inline-block;}
+.news .link ul li a{font-family:"微软雅黑";font-size:16px;color:#333;border-bottom:1px dashed #333;padding:9px 0;display:block;}
+.news .link ul li a:hover{color:#f01212;}
+.news .link ul li a span{float:right;padding-right:14px;}
+.news .link>a{font-family:"微软雅黑";font-size:16px;color:#333;float:right;margin-top:22px;}
+.news img{float:right;margin-right:6px;margin-top:15px;}
+
+
+.product{width:100%;background:#efedea;clear:both;overflow:hidden;}
+.product .pro_link{width:1217px;margin:0 auto;}
+.product .pro_link .pic{margin-top:10px;}
+.product .pro_link .pic>a{float:left;margin-top:145px;}
+.product .pro_link .pic ul{float:left;padding-bottom:36px;}
+.product .pro_link .pic ul li{display:inline-block;border:2px solid #b5b5b5;position:relative;}
+.product .pro_link .pic ul li img{display:inline-block;z-index:1;}
+.product .pro_link .pic ul li a span{font-family:"微软雅黑";font-size:30px;color:#ffff66;text-align:center;width:258px;height:342px;line-height:342px;display:none;cursor:pointer;position:absolute;right:0;top:0;border:2px solid #886547;background-color:rgba(185,174,179,0.4); filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#64000000,endColorstr=#64000000);z-index:2;
+}
+.product .pro_link .pic ul li:hover a span{display:block;}

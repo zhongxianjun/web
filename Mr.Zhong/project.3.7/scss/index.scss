@@ -1,0 +1,39 @@
+﻿//mixin
+@mixin border{
+	border:1px solid #ff0;
+}
+@mixin size($size){
+	font-size:$size;
+	line-height:$size + 16px;
+}
+
+.box{
+		width:300px;
+		height:200px;
+		background:red;
+		/* 混合调用 */
+		@include border;
+		@include size(20px);
+	}
+
+//extend
+%link{
+	display:inline-block;
+}
+.box1{
+		width:400px;
+		height:300px;
+		background:blue;
+		/* 混合调用 */
+		@extend .box;
+		@extend %link;
+	}
+//function函数
+$fontSize:12px;
+@function px2rem($px){
+	@return $px / 2 / $fontSize * 1rem;
+}
+div{
+	width:px2rem(200px);
+	height:px2rem(500px);
+}

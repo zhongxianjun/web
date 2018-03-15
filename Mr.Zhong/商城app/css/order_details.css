@@ -1,0 +1,140 @@
+body{
+	background: #f4f2f3;
+}
+
+.state{
+	font-size: 0;
+	background: #fff;
+	clear:both;
+	overflow: hidden;
+	padding-bottom: 0.266667rem;
+	padding-top: 0.266667rem;
+}
+.state a{position:relative;display:block;}
+.state a:after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 0.24rem;
+	height: 0.426667rem;
+	top:50%;
+	right: 3%;
+	background:url(../images/personal_icon_right.png) no-repeat;
+	background-size: 0.24rem 0.426667rem;
+	margin-top:-0.12rem;
+}
+.state a span{
+	font-size:14px;
+	font-family: "微软雅黑";
+	color:#ee312b;
+	font-weight: normal;
+	display:block;
+	background: url(../images/order_details_car.png) no-repeat;
+	background-size:0.4rem 0.306667rem; 
+	background-position: 3% center;
+	padding-left: 0.8rem;
+	line-height: 0.72rem;
+}
+.state a em{
+	padding-left: 0.8rem;
+	font-family:  "微软雅黑";
+	font-size:0.32rem;
+	color:#999999;
+	font-style: normal;
+	line-height: 0.72rem;
+}
+.address{
+	background: #fff;
+	padding-bottom: 0.266667rem;
+}
+.address h4{
+	color:#999999;
+	font-size:0.373333rem;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	background: url(../images/order_address.png) no-repeat;
+	background-size:0.306667rem 0.426667rem; 
+	background-position: 3% center;
+	padding-left: 0.8rem;
+	margin-bottom: 0.266667rem;
+}
+.address p{
+	padding-left: 0.8rem;
+	font-family: "微软雅黑";
+	font-size:0.373333rem;
+	color:#333;
+	line-height: 0.64rem;
+}
+
+.details_title h1{
+	margin-top:0.266667rem;
+	padding: 0 3%;
+	height: 0.853333rem;
+	line-height: 0.853333rem;
+	background: #fff;
+	border-bottom:1px solid #dedede;
+	font-size:"微软雅黑";
+	font-size:0.346667rem;
+	color:#333333;
+	font-weight: normal;
+}
+.order{
+	border-bottom: none;
+}
+.refund{
+	padding: 0 3%;
+	clear:both;
+	overflow: hidden;
+	background: #fff;
+	padding-top:0.373333rem;
+	padding-bottom: 0.24rem;
+}
+.refund>a{
+	height: 0.72rem;
+	width: 1.653333rem;
+	line-height: 0.72rem;
+	text-align: center;
+	float: right;
+	color:#fff;
+	background: #ee312b;
+	font-size:0.373333rem;
+	font-family: "微软雅黑";
+	border-radius: 5px;
+	border:2px solid #ee312b;
+}
+
+.status{
+	background:#fff;
+	margin-top:0.266667rem;
+	padding:0.266667rem 3%;
+}
+.status p{
+	line-height:0.8rem;
+	font-size:0.346667rem;
+	font-family: "微软雅黑";
+	color:#999999;
+}
+
+.footer{
+	position: fixed;
+	left:0;
+	bottom:0;
+	width: 100%;
+	clear:both;
+	overflow: hidden;
+}
+.footer a{
+	display:inline-block;
+	width: 50%;
+	height: 1.306667rem;
+	line-height: 1.306667rem;
+	color:#fff;
+	font-size: 0.4rem;
+	font-family: "微软雅黑";
+	text-align: center;
+	background: #ee312b;
+	float: left;
+}
+.footer a:first-child{
+	background: #5f646e;
+}

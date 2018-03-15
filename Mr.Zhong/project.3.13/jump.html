@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+	<title>css3+animation+requestAnimationFrame</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.ball{
+			float: left;
+			width:20px;
+			height: 20px;
+			border-radius:50%;
+			background:blue;
+			margin-left:100px;
+			animation: jump 1s ease-in forwards;
+		}
+		a{
+			outline: none;
+			blr:expression(this.onFocus=this.blur());
+			text-decoration:none;
+			float: right;
+			margin-top: 200px;
+			margin-right: 50px;
+			width:100px;
+			line-height:30px;
+			text-align: center;
+			font-size:18px;
+			font-family: '微软雅黑';
+			color:green;
+			background-color: blue;
+			border-radius: 10px;
+		}
+		a:hover{
+			outline: none;
+		}
+		@keyframes jump{
+			from{
+				margin-top: 0px;
+			}
+			60%{
+				margin-top: 400px;
+			}
+			75%{
+				margin-top:180px; 
+			}
+			85%{
+				margin-top:400px;
+			}
+			90%{
+				margin-top:240px;
+			}
+			93%{
+				margin-top:400px;
+			}
+			94%{
+				margin-top:320px;
+			}
+			95%{
+				margin-top:400px;
+			}
+			97%{
+				margin-top:370px;
+			}
+			98%{
+				margin-top:395px;
+			}
+			to{
+				margin-top: 400px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ball"></div>
+	<a href="jump.html">刷新</a>
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>

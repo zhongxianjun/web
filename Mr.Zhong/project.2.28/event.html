@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+	<title>定时器练习</title>
+	<style type="text/css">
+		* { padding: 0; margin: 0; }
+		button { outline: none; border: none; }
+		a { outline: none; text-decoration: none; blr:expression(this.onFocus=this.blur()); }
+	</style>
+</head>
+<body style="text-align: center; margin-top:100px; ">
+<!--S 定时炸弹游戏-->
+
+	<!-- <span style="font-family: '微软雅黑'; font-size: 22px; color: red;">
+		你只有3秒钟的时间用来拆除炸弹，请迅速做出决定
+	</span>
+	<br><br>
+	<button id="red" style="font-size:18px; font-family:'微软雅黑'; color:red; background-color: black; margin:10px 40px; width:80px; height:40px;">剪红线</button>
+	<button id="blue" style="font-size:18px; font-family:'微软雅黑'; color:blue; background-color: black; margin:10px 40px; width:80px; height:40px;">剪蓝线</button><br> -->
+	<!-- <button id="green" style="font-size:18px; font-family:'微软雅黑'; color:green; background-color: black; margin:10px 40px; width:80px; height:40px;">剪绿线</button><br>
+	<button id="pink" style="font-size:14px; font-family:'微软雅黑'; color:pink; background-color: black; margin:10px 40px; width:80px; height:40px;">剪粉红线</button>
+	<button id="yellow" style="font-size:18px; font-family:'微软雅黑'; color:yellow; background-color: black; margin:10px 40px; width:80px; height:40px;">剪黄线</button><br>
+	<a href="event.html" style="font-size:18px; font-family:'宋体'; color:black; font-weight: bold; background-color: #666; margin:40px auto; width:240px; line-height:40px; display: block;">刷　　新</a> -->
+<!--E 定时炸弹游戏-->
+	<script type="text/javascript">
+//S 定时炸弹游戏js
+	
+		// var state = false;	// Define three variable values as false.
+		// var boom = false;
+		// var lineNoke = false;
+		// var timmer = setTimeout(function(){	//set a Timeout.
+		// 	alert('笋干爆炸boom!');
+		// 	state = true;
+		// 	},3000);
+		// var btn = document.getElementById('blue');
+		// btn.onclick = function(){
+		// 	if(state == false && boom == false && lineNoke == false){
+		// 		clearTimeout(timmer);
+		// 		alert('恭喜你！拆除炸弹成功！');
+		// 		lineNoke = true;
+		// 		}else if(lineNoke == true){
+		// 			alert('炸弹已拆除！');
+		// 		}else if(state == true || boom == true){
+		// 			alert('你已阵亡！');
+		// 		}
+		// 	}
+		// var btn = document.getElementById('red');
+		// btn.onclick = function(){
+		// 	if(state == false && lineNoke == false && boom == false){
+		// 		setTimeout(function(){
+		// 			alert('剪错了线，笋干爆炸boom!');
+		// 			boom = true;
+		// 			},0);
+		// 		clearTimeout(timmer);
+		// 		}else if(state == true || boom == true){
+		// 			alert('你已阵亡！');
+		// 		}else if(lineNoke == true){
+		// 			alert('炸弹已拆除！');
+		// 		}
+		// 	}
+		// 	var btn = document.getElementById('green');
+		// btn.onclick = function(){
+		// 	if(state == false && lineNoke == false && boom == false){
+		// 		setTimeout(function(){
+		// 			alert('剪错了线，笋干爆炸boom!');
+		// 			boom = true;
+		// 			},0);
+		// 		clearTimeout(timmer);
+		// 		}else if(state == true || boom == true){
+		// 			alert('你已阵亡！');
+		// 		}else if(lineNoke == true){
+		// 			alert('炸弹已拆除！');
+		// 		}
+		// 	}
+		// 	var btn = document.getElementById('pink');
+		// btn.onclick = function(){
+		// 	if(state == false && lineNoke == false && boom == false){
+		// 		setTimeout(function(){
+		// 			alert('剪错了线，笋干爆炸boom!');
+		// 			boom = true;
+		// 			},0);
+		// 		clearTimeout(timmer);
+		// 		}else if(state == true || boom == true){
+		// 			alert('你已阵亡！');
+		// 		}else if(lineNoke == true){
+		// 			alert('炸弹已拆除！');
+		// 		}
+		// 	}
+		// 	var btn = document.getElementById('yellow');
+		// btn.onclick = function(){
+		// 	if(state == false && lineNoke == false && boom == false){
+		// 		setTimeout(function(){
+		// 			alert('剪错了线，笋干爆炸boom!');
+		// 			boom = true;
+		// 			},0);
+		// 		clearTimeout(timmer);
+		// 		}else if(state == true || boom == true){
+		// 			alert('你已阵亡！');
+		// 		}else if(lineNoke == true){
+		// 			alert('炸弹已拆除！');
+		// 		}
+		// 	}
+//E 定时炸弹游戏js
+
+		// for(var i = 0; i < 1; i++){		//利用循环定时器+for循环 输出每秒从1开始的累加值
+		// 	var timmer = setInterval(function(){
+		// 		var a = i++;
+		// 		console.log(a);
+		// 	},1000);
+		// }
+		
+
+
+	</script>
+</body>
+</html>

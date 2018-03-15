@@ -1,0 +1,109 @@
+body{
+	background: #f4f2f3;
+}
+.order_nav{
+	width:100%;
+	clear:both;
+	overflow: hidden;
+}
+.order_nav ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	line-height:1.226667rem;
+	height:1.226667rem;
+}
+.order_nav ul li a{
+	color:#333333;
+	font-size:0.373333rem;
+	font-family: "微软雅黑";
+	line-height: 1.2rem;
+	height: 1.2rem;
+	display:block;
+	border-bottom: 2px solid #dddddd;
+}
+.order_nav ul li a.on{
+	color:#ee312b;
+	border-bottom: 2px solid #ee312b;
+}
+
+.order_list{
+	margin-top:0.293333rem;
+	width: 100%;
+}
+.order_list .title{
+	clear: both;
+	overflow: hidden;
+	border-bottom:1px solid #dedede;
+	border-top:1px solid #dedede;
+	height:1.173333rem;
+	line-height:1.173333rem ;
+	padding: 0 3%;
+	background: #fff;
+}
+.order_list .title form{
+	float: left;
+	height: 0.746667rem;
+	line-height: 0.746667rem;
+	margin-right: 0.266667rem;
+}
+.order_list .title h1{
+	font-size:"微软雅黑";
+	font-size:0.373333rem;
+	color:#333;
+	float: left;
+	font-weight: normal;
+}
+.order_list .title span{
+	color:#ee312b;
+	font-size:0.346667rem;
+	float: right;
+	font-size:"微软雅黑";
+	font-size:0.373333rem;
+}
+.order_list .price{
+	margin-top:0.133333rem;
+	background: #fff;
+	padding: 0 3%;
+	padding-top: 0.186667rem;
+	padding-bottom:0.32rem;
+	clear:both;
+	overflow: hidden;
+}
+.order_list .price p{
+	font-family: "微软雅黑";
+	font-size:0.32rem;
+	color:#333;
+	
+	margin-bottom:0.426667rem;
+	text-align: right;
+}
+.order_list .price p span{
+	color:#ee312b;
+}
+.order_list .price a.cancel{
+	height: 0.72rem;
+	width: 1.973333rem;
+	line-height: 0.72rem;
+	text-align: center;
+	float: right;
+	color:#333333;
+	font-size:0.373333rem;
+	font-family: "微软雅黑";
+	border:2px solid #dddddd;
+	border-radius: 5px;
+	margin-right: 0.32rem;
+}
+.order_list .price a.payment{
+	height: 0.72rem;
+	width: 1.653333rem;
+	line-height: 0.72rem;
+	text-align: center;
+	float: right;
+	color:#fff;
+	background: #ee312b;
+	font-size:0.373333rem;
+	font-family: "微软雅黑";
+	border-radius: 5px;
+	border:2px solid #ee312b;
+}
