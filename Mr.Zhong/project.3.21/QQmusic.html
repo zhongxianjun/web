@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>QQ音乐</title>
+	<style type="text/css">
+	*{padding: 0;
+		margin: 0;}
+	ul li{ list-style: none; margin-top: 8px; border-bottom: 1px solid #ddd; }
+		.main{
+			width:500px;
+			min-height: 800px;
+			margin: 0 auto;
+			background-color: #ccc;
+		}
+		form{
+			width:280px;
+			margin: 0px auto;
+			padding-top: 20px;
+		}
+		form input{
+			width:220px;
+			line-height: 16px;
+			padding: 6px;
+			font-size: 16px;
+			outline: none;
+		}
+		form #search{
+			width:32px;
+			height: 32px;
+			background: url(images/search.png) center center no-repeat;
+			background-size: 30px 30px;
+			background-color: #ccc;
+			vertical-align: middle;
+			cursor: pointer;
+			border:0;
+			outline: none;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="main">
+		<form method="get" action="">
+			<input type="text" name="txt" placeholder="搜索喜欢的歌手/歌曲名">
+			<button id="search" type="button"></button>
+		</form>
+		<div class="access">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="lib/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#search").click(function(){
+				var keys = $(".main form input").val();
+				if(!keys){
+					return;
+				}
+				var api = "https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp?g_tk=1928093487&inCharset=utf-8&outCharset=utf-8&notice=0&format=jsonp&p=1&perpage=20&n=20&catZhida=1&zhidaqu=1&t=0&flag=1&ie=utf-8&sem=1&aggr=0&remoteplace=txt.mqq.all&uin=0&needNewCode=1&platform=h5&w=" + keys;
+				$.ajax({
+					url:api,
+					type:"get",
+					dataType:"jsonp",
+					jsonp:"jsonpCallback",
+					jsonpCallback:"__jp1",
+					success:function(data){
+						// console.log(data);
+						var tempArr = data.data.song.list;
+						var len = tempArr.length - 1;
+						console.log(tempArr);
+						var res = '<ul>';
+						for (var i = 0; i <= len; i++) {
+							res += "<li>" + tempArr[i].albumname + " -- " + tempArr[i].singer[0].name + " --《" + tempArr[i].songname + "》</li>";
+						}
+						res += "</ul>";
+						$(".access").append(res);
+					},
+				})
+			})
+		})
+	</script>
+</body>
+</html>
