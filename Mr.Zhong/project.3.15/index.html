@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>cookie+本地存储</title>
+	<style type="text/css">
+	form{
+		width:430px;
+		margin:0 auto;
+		background: #666;
+		font-family: "微软雅黑";
+		font-size: 20px;
+		color:#000;
+	}
+		input{
+			width:400px;
+			line-height:24px;
+			padding: 8px;
+			margin: 0 auto;
+			margin-top: 16px;
+			outline: none;
+			display: block;
+			font-family: "微软雅黑";
+			font-size: 18px;
+			color:#000;
+		}
+		button{
+			display: block;
+			margin:0 auto;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+<form>
+	用户名：<input type="text" name="username" placeholder="请输入用户名" value="">
+	密码：<input type="password" name="pwd" value="">
+	<button type="submit" name="btn" style="width:200px; line-height:30px;">登录</button>
+</form>
+<script type="text/javascript">
+	//input存储用户名、密码
+	
+	var btn = document.querySelector("button[name='btn']");
+	btn.onclick = function(){
+		var User = document.querySelector("input[name='username']").value;
+		var pwd = document.querySelector("input[name='pwd']").value;
+		localStorage.setItem('username',User);
+		localStorage.setItem('password',pwd);
+	}
+	document.querySelector("input[name='username']").value = localStorage.getItem('username');
+	// console.log(localStorage.getItem('username'));
+	// console.log(localStorage.getItem('password'));
+
+	/*//set一个cookie函数
+	function setCookie(key,val){
+		document.cookie = key + "=" + escape(val);
+	}
+	//保存用户名 username=张三
+	setCookie('username','张三');
+
+	//保存密码 password=123546
+	setCookie('pwd',123456);*/
+
+	//输出val
+	/*var str = document.cookie;
+	console.log(unescape(str).split(';')[0].split('=')[1]);*/
+
+	//字符串形式  输出val
+	/*var aStr = "username=%u5F20%u4E09;pwd=123456";
+	function getCookie(key){
+		var star = aStr.indexOf(key);
+		// console.log(star);
+		if(star != -1){
+			var end = aStr.indexOf(";",star);
+			if(end == -1){
+				return aStr.substr(star+key.length + 1);
+			}
+			return aStr.substring(star+key.length + 1,end);
+		}
+		return 'Error';
+	}
+	console.log(unescape(getCookie('pwd')));*/
+
+	//数组形式  输出val
+	/*var Str = "age=18;username=%u5F20%u4E09;pwd=123456";
+		//定义成一个数组aArr
+		var Arr = Str.split(';');
+		console.log(Arr);
+		var kArr = [];
+		var include;
+		function getCookie(key,val){
+			Arr.map(function(elem, index) {
+				// console.log(elem);
+				kArr.push(elem.split('='))
+			});
+			// console.log(kArr);
+			// console.log(kArr.length-1);
+			for(var i=0; i<=kArr.length-1; i++){
+				// console.log(kArr[i][0]);
+				if(kArr[i][0] == key){
+					include = kArr[i][1];
+				}
+			}
+			return include;
+		}
+		console.log(unescape(getCookie('username')));*/
+		
+	
+</script>
+</body>
+</html>
