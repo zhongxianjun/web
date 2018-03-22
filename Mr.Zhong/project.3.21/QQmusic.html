@@ -2,30 +2,32 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
 	<title>QQ音乐</title>
 	<style type="text/css">
 	*{padding: 0;
 		margin: 0;}
-	ul li{ list-style: none; margin-top: 8px; border-bottom: 1px solid #ddd; }
+	ul li{ list-style: none; margin-top: 8px; border-bottom: 1px solid #ddd; cursor: pointer; }
+	ul li:hover{ color:red; }
 		.main{
 			width:500px;
 			min-height: 800px;
 			margin: 0 auto;
 			background-color: #ccc;
 		}
-		form{
+		.form{
 			width:280px;
 			margin: 0px auto;
 			padding-top: 20px;
 		}
-		form input{
+		.form input{
 			width:220px;
 			line-height: 16px;
 			padding: 6px;
 			font-size: 16px;
 			outline: none;
 		}
-		form #search{
+		.form #search{
 			width:32px;
 			height: 32px;
 			background: url(images/search.png) center center no-repeat;
@@ -41,10 +43,10 @@
 </head>
 <body>
 	<div class="main">
-		<form method="get" action="">
+		<div class="form">
 			<input type="text" name="txt" placeholder="搜索喜欢的歌手/歌曲名">
 			<button id="search" type="button"></button>
-		</form>
+		</div>
 		<div class="access">
 			
 		</div>
@@ -53,7 +55,7 @@
 	<script type="text/javascript">
 		$(function(){
 			$("#search").click(function(){
-				var keys = $(".main form input").val();
+				var keys = $(".main .form input").val();
 				if(!keys){
 					return;
 				}
@@ -74,7 +76,7 @@
 							res += "<li>" + tempArr[i].albumname + " -- " + tempArr[i].singer[0].name + " --《" + tempArr[i].songname + "》</li>";
 						}
 						res += "</ul>";
-						$(".access").append(res);
+						$(".access").html(res);
 					},
 				})
 			})
