@@ -3,6 +3,7 @@ $(function(){
 	var sizeArr = [];
 	var tasteArr = [];
 	var selGoodsI = 0;
+	var res = '';
 	//商品数据获取
 	$.ajax({
 		url:"data/goods.json",
@@ -74,7 +75,7 @@ $(function(){
 
 		//商品基础信息
 		$(".detail p").html('价格:<span class="price">￥'+curGoods.att_price+'</span>可用消费券:<span class="quan">￥'+curGoods.att_reduce+'</span>pv:<span class="pv">'+curGoods.att_pv+'</span>库存:<span class="num">'+curGoods.att_kc+'</span>');
-
+		res = ' 价格:￥'+curGoods.att_price+' 可用消费券:￥'+curGoods.att_reduce+' pv:'+curGoods.att_pv+' 库存:'+curGoods.att_kc;
 
 		var attNameArr = curGoods.att_name.split("|");
 		var curSize =  attNameArr[0];
@@ -85,6 +86,7 @@ $(function(){
 			if($(this).text() === curSize){
 				$(this).addClass('on').siblings().removeClass('on');
 			}
+
 		});
 
 		//当前口味选中
@@ -93,6 +95,48 @@ $(function(){
 				$(this).addClass('on').siblings().removeClass('on');
 			}
 		});
-
 	}
+
+	//包装选择
+	$(".size ul li").each(function(){
+		$(this).click(function(){
+			var sizeStr = $(this).text();
+			var tasteStr = $(".taste ul li.on").text();
+			var attName = sizeStr + "|" + tasteStr;
+			// console.log(attName);
+			var index = 0;
+			for(var i=0;i<=goods.length-1;i++){
+				if(attName === goods[i].att_name){
+					index = i;
+					break;
+				}
+			}
+			selGoodsI = index;
+			select(selGoodsI);
+		});
+	});
+
+	//口味选择
+	$(".taste ul li").each(function(){
+		$(this).click(function(){
+			var tasteStr = $(this).text();
+			var sizeStr = $(".size ul li.on").text();
+			var attrName = sizeStr + "|" + tasteStr;
+			var index = 0;
+			for(var i = 0; i <= goods.length-1; i++){
+				if(attrName === goods[i].att_name){
+					index = i;
+					break;
+				}
+			}
+			selGoodsI = index;
+			select(selGoodsI);
+		});
+	});
+
+	//确定按钮
+	$(".ensure button").click(function(){
+		alert(goods[selGoodsI].att_name + res);
+	});
+
 })
