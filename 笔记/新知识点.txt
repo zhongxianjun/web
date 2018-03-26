@@ -1,0 +1,19 @@
+*{ margin:0px; padding:0px;}
+a { text-decoration:none; blr:expression(this.onFocus=this.blur()); outline:none;}
+a:focus{ outline:none;}
+img{ border:none;}
+ul li{list-style:none;}
+
+
+:first-child	第一个孩子
+:hover		鼠标经过效果
+
+outline:none; 	去掉外轮廓
+cursor:pointer;	光标变手型
+
+onfocus="if(value==defaultValue){ value=''}" 	获得焦点
+onblur="if(value==''){value=defaultValue}"	失去焦点
+
+
+
+

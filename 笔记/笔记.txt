@@ -1,0 +1,283 @@
+网页：（超文本标记语言 html）
+
+
+网站：多个网页组成
+
+
+浏览器：百度 360 谷歌 IE 火狐（标准）
+
+
+网页文件：.html	.htm
+
+工具：
+
+
+标记的特点：
+1.尖括号包围（关键字）
+2.标记都是成对存在的，第一个是开始标记，第二个是结束标记（斜线）
+3.单标记自我结束（少量）
+4.标记之间互相嵌套（包含）
+
+
+h1-h6	标题
+p	段落
+img  	图片	   src="图片路径"   
+a    	链接标签   href="链接路径"
+br	换行
+span
+
+
+
+b		加粗
+big		大写
+strong 		强调
+i		斜体
+u		下划线
+
+
+
+
+ul li		列表（无序）
+ol li		列表（有序）type  start
+
+table		定义表格
+tr		定义行
+td		定义标准单元格
+th		定义表头单元格
+
+width		宽度
+height		高度
+border		边框
+bordercolor	边框颜色
+cellspacing	间距（单元格与单元格之间）
+cellpadding	边距（文本与单元格之间）
+rowspan		行合并
+colspan		列合并
+align		水平对齐方式  left左  center中   right右
+valign		垂直对齐方式  top上   middle中   bottom下
+bgcolor		背景颜色
+
+
+
+
+style		 	添加css属性样式
+font-family:	 	字体
+font-size:	 	字体大小
+color:		 	字体颜色
+line-height:	 	行距（行高与高相等：垂直居中）
+letter-spacing:	 	字与字之间的距离
+font-weight:bold 	字体加粗：bold = 700     normal正常
+font-style:italic; 	斜体
+text-align:center;	文本水平对齐方式		left左  center中   right右
+vertical-align:middle;	文本垂直对齐方式    （图片前面后面的文字或文本框前面后面的文字）top上   middle中   bottom下
+text-indent:2em; 	首行缩进
+text-decoration:none;	去掉下划线    underline下划线
+display:block;	 	行元素属性（行内元素转行元素）
+background		背景图片（200px 10px no-repeat不平铺）
+width			宽度
+height			高度
+
+list-style:none;	去掉列表样式
+
+
+
+
+
+列表任务ol li
+1.10行新闻（标题内容不定）试用字母和罗马数字  不从0开始
+
+表格任务：
+制作一张成绩单(学号，班级，姓名，性别，专业，成绩，排名）
+边框：10px  间距：5；  边距：0；
+边框颜色：除默认颜色之外
+文本水平居中 
+表头：加粗
+成绩单不少于20条
+
+
+
+行标签:占据页面的整行;行标签可以包含任何行标签和行内标签；p是一个特殊的行标签，不能包含其他行标签；
+
+行内标签:占据是文本的宽度；行内标签只能包含行内标签
+
+label
+表单标签：
+form		定义表单区域    action="" method="post"
+input		定义单行输入框
+textarea	多行输入框（文本域）style="resize:none;vertical-align:top;width:500px; height:80px;"（不能调整大小    文字垂直对齐方式）					
+select		下拉框(option)   selected="selected"（默认选择）
+
+<input type="" name="" value=""/>
+text		输入文本
+radio		单选按钮  checked="checked"（默认选择）
+checkbox		多选按钮(复选框)
+button		按钮
+submit		提交按钮
+reset		重置按钮
+password	  	密码
+email		邮箱
+file		文件
+color		颜色块
+date		日期
+tel		电话
+number		数字
+
+
+表单任务
+1.登录框：用户名；密码；验证码（看不清，换一张）；忘记密码；立即注册；按钮
+
+2.注册框：昵称；密码；重复密码；邮箱；验证码；按钮；
+
+3.个人资料：姓名；性别；出生年月；家庭住址（省，市，区）；邮箱；联系方式；兴趣爱好；个人简介；按钮；
+
+4.留言框：用户名；邮箱；留言框；按钮；
+
+
+外边距
+margin:0 auto;		块居中	上下    左右
+
+margin:200px 180px 150px 100px;   上   右   下    左
+
+margin:100px 80px 50px;		上   左右   下
+
+margin-left
+margin-right
+margin-top
+margin-bottom
+
+内边距
+padding:200px 180px 150px 100px;   上   右   下    左
+
+padding:100px 80px 50px;		上   左右   下
+
+padding-left
+padding-right
+padding-top
+padding-bottom
+
+
+边框线
+border:颜色  样式(实线solid；虚线dashed；点线dotted；双线double) 宽度；  border:red solid 1px;
+
+
+圆角
+border-radius:;
+border-bottom-left-radius:
+border-bottom-right-radius:
+border-top-left-radius:
+border-top-right-radius:    
+
+behavior:url(PIE.htc);	圆角兼容插件
+box-shadow: 5px  5px  15px  5px  #666666
+设置阴影：正值右边   正值下边  虚度（值越大越虚）  四周扩散  颜色
+
+三角形
+border-style:solid;
+border-width:100px;
+border-color:red blue yellow green;
+border-color:red transparent transparent transparent;
+
+float			浮动left   right
+
+清除浮动
+clear:both; 		不允许左右两边有浮动
+overflow:hidden;	溢出隐藏
+
+
+任务
+1.云煤首页(居中，圆角）
+2.圆，椭圆
+3.三角形（直角）
+
+
+选择器：
+*    通配符    所有标签
+
+class  类选择器	.类名{}
+
+id	id选择器  #id名{}
+
+p	标签选择器   标签名{}
+
+ul li	后代选择器   ul li{}
+
+:first-child {} 第一个孩子  伪类
+:last-child{}	最后一个孩子（IE浏览器兼容问题）
+:nth-child(n){}	（IE浏览器兼容问题）
+
+:hover {}     鼠标经过  
+
+组选择器：
+例：.nav ul li:hover{background:#000;}
+    .nav ul li.cur{background:#000;}
+组合：
+.nav ul li:hover,.nav ul li.cur{background:#000;}  
+
+
+
+position:relative;		相对定位：本身位置存在，相对本身左上角进行位置移动   通过 left top  right bottom属性进行位置移动
+    
+position:absolute;		绝对定位：本身位置释放，相对于屏幕左上角进行位置移动 通过 left top  right bottom属性进行位置移动
+    
+父相子绝：父类用相对定位，子类用绝对定位
+
+
+:before   之前  content:''
+:after	  之后  content:''
+
+
+
+2.css属性去掉链接出现的虚线框：
+
+IE浏览器：
+a {
+blr:expression(this.onFocus=this.blur());
+}
+
+FF浏览器：
+a { 
+outline: none;
+} 
+或者缩小范围： 
+a:focus { 
+outline: none; 
+} 
+
+
+
+3.图片链接出现的蓝色边框：img{ border:none;}
+
+
+
+4.透明度的兼容性：{opacity:0.3; filter:Alpha(opacity=30); -moz-opacity:0.3;}
+
+
+透明度
+{background-color: transparent; background-color:rgba(0,0,0,0.4);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#64000000,endColorstr=#64000000);}
+
+
+地图插件地址：http://api.map.baidu.com/lbsapi/creatmap/index.html
+
+字体在线转换格式：https://www.fontsquirrel.com/tools/webfont-generator
+
+
+
+首页		index.html
+公司简介 	about_us.html
+新闻中心		news.html
+新闻详情		news_details.html
+产品中心		product.html
+产品详情		pro_details.html
+联系我们		contact_us.html
+
+
+公共样式表      public.css
+
+<link rel="stylesheet" href="css/style1.css" />		链接外部样式表
+
+
+0.7 = 80*1.6  ==  138
+
+0 1 2 3 4 5 6 7 8 9 a b c d e f
+
+

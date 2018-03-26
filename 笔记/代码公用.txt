@@ -1,0 +1,117 @@
+实现代码公用的几种方式
+
+@mixin混合、@extend继承、@function函数
+@import也可实现代码复用
+
+
+*
+@mixin混合定义与使用
+1、不带参数方式
+	//源 index.scss
+	@mixin center-block{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.box{
+		width:300px;
+		height:200px;
+		background:red;
+		/* 混合调用 */
+		@include center-block;
+	}
+	
+	//编译 index.css
+	.box{
+		width:300px;
+		height:200px;
+		background:red;
+		/* 混合调用 */
+		margin-left:auto;
+		margin-right:auto;
+	}
+2、带参数方式
+	//源 index.scss
+	@mixin border-radius($size){
+		-webkit-border-radius: $size;
+			border-radius: $size;
+	}
+	.box{
+		width:300px;
+		height:200px;
+		background:red;
+		/* 混合调用 */
+		@include border-radius(5px);
+	}
+	//编译 index.css
+	.box{
+		width:300px;
+		height:200px;
+		background:red;
+		/* 混合调用 */
+		-webkit-border-radius: 5px;
+			border-radius: 5px;
+	}
+
+*
+@extend继承:
+1、sass中，选择器继承可以让选择器继承另一个选择器的所有样式，并联合声明。使用选择器的继承，要使用关键词@extend，后     面紧跟需要继承的选择器。
+	//源 index.scss
+	p{
+		font-size:15px;
+		color:#f00;
+	}
+
+	div{
+		background:blue;
+		@extend p;
+	}
+	//编译 index.css
+	p, div{
+		font-size:15px;
+		color:#f00;
+	}
+	div{
+		background:blue;
+	}
+
+2、使用 % 减少冗余代码
+   注意接下来的%p继承方式自身没有被编译(可以减少冗余代码，节省空间)
+	//源 index.scss
+	%p{
+		font-size:15px;
+		color:#f00;
+	}
+
+	div{
+		background:blue;
+		@extend p;
+	}
+	//编译 index.css
+	div{
+		font-size:15px;
+		color:#f00;
+	}
+	div{
+		background:blue;
+	}
+
+
+*
+@function函数:
+sass定义了很多函数可供使用，当然你也可以自己定义函数，以@fuction开始
+	//源 index.scss
+	$baseFontSize:100px;
+	@function px-to-rem($px){
+		@return $px / $baseFontSize * 1rem;
+	}
+	.box{
+		width:px-to-rem(100px);
+		height:px-to-rem(50px);
+	}
+
+	//编译 index.css
+	.box{
+		width: 1rem;
+		height: 0.5rem;
+	}
+

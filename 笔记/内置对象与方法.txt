@@ -1,0 +1,55 @@
+*内置对象+对象方法
+
+上述对象都会有系统自带的一些属性与方法
+这里我们着重介绍：
+String、Array
+
+辅讲：
+window、Date、Math对象
+
+参考：
+http://www.w3school.com.cn/jsref/jsref_obj_global.asp
+https://www.cnblogs.com/liuluteresa/p/6413988.html
+    
+
+
+
+*1、String    
+
+属性:
+ length      返回字符串的字符长度
+
+
+方法:
+charAt(index)  返回指定索引处的字符
+indexOf(searchString, startIndex) 返回字符串中第一个出现指定字符串的位置(下标)
+lastlndexOf(searchString, startIndex) 返回字符串中最后一个出现指定字符串的位置
+slice(startIndex, endIndex)   将部分字符抽出并在新的字符串中返回剩余部分
+split(delimiter)  按分隔符将字符串切割为数组
+substr(startIndex, length)  从startIndex取,取length个字符
+substring(startIndex, endIndex)  从startIndex和endIndex之间的字符,不包括endIndex
+valueOf()    返回字符串对象的原始值
+
+
+
+*2、Array 
+
+属性:
+length      获取数组元素的个数
+
+
+方法:
+concat(array1,arrayn)  将两个或两个以上的数组值连接起来,合并后返回结果
+join(string)  将数组中元素合并为字符串,string为分隔符.如省略参数则直接合并,不再分隔
+pop()      移除数组中的最后一个元素并返回该元素
+push(value) 在数组的末尾加上一个或多个元素,并且返回新的数组长度值
+reverse()    颠倒数组中元素的顺序,反向排列
+shift()     移除数组中的第一个元素并返回该元素
+slice(start, deleteCount) 方法可从已有的数组中返回选定的元素  (不影响原数组)
+splice(index,howmany,item1,.....,itemX)   向/从数组中添加/删除项目，然后返回被删除的项目  (影响原数组)
+item为依次替换加入的元素
+toString()    将数组所有元素返回一个字符串,其间用逗号分隔
+unshift(value)为数组的开始部分加上一个或多个元素,并且返回该数组的新长度
+valueOf()    返回数组对象的原始值
+
+
