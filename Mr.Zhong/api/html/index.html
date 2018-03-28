@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body> 
+	<div class="song">
+		
+	</div>
+	<button id="send">请求</button>
+	<script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#send").click(function(){
+			$.ajax({
+				url:"index.php",
+				async:true,
+				dataType:'json',
+				// beforeSend:function(){
+
+				// },
+				success:function(data){
+					var music = $(".song");
+					var tempArr = data.songData;
+					// console.log(tempArr);
+					var len = tempArr.length - 1;
+					var res = '<ul>';
+					for(var i = 0; i <= len; i++){
+						// console.log(tempArr[i]);
+						res += '<li>' + tempArr[i].songname + '-' + tempArr[i].singer + '-' + tempArr[i].time + '</li>';
+					}
+					res += '</ul>';
+					music.append(res);
+				},
+			});
+		});
+	});
+	</script>
+</body>
+</html>
