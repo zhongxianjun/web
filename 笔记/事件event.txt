@@ -1,0 +1,129 @@
+* 事件event:
+
+
+   鼠标相关事件:
+
+   点击 onclick
+   双击 ondblclick
+   鼠标按下 onmousedowm
+   鼠标抬起 onmouseup
+   鼠标置入 onmouseover
+   鼠标移出 onmouseout
+   鼠标移动 onmousemove
+
+
+
+   键盘按下事件:
+
+   键盘按下 onkeydowm
+   键盘抬起 onkeyup
+   键盘按下抬起 onkeypress
+
+
+
+
+   表单相关事件:
+
+   获取焦点 onfocus
+   失去焦点 onblur
+   值被改变 onchange
+   表单提交 onsubmit
+
+
+
+   其他事件:
+
+   文档加载完毕 onload
+   滚动条滚动 onscroll
+
+
+
+* dom(document object model)操作
+
+
+
+   js对dom操作:
+
+
+   1、获取节点:
+   document.getElementById("id名");
+
+   document.getElementsByClassName("class名");
+
+   document.getElementsByTagName("标签名");
+
+
+
+   2、操作
+
+   样式
+   value
+
+   属性
+   innerText
+   innerHTML
+   ...
+
+
+
+*定时器
+
+
+   延时定时器:
+   var timmer = setTimeout(function(){
+	//延时执行的功能
+   },延时时长ms毫秒)
+
+   清除延时计时器
+   clearTimeout(timmer);
+
+
+   循环定时器:
+   var timmer = setInterval(function(){
+	//循环执行的功能
+   },间隔时长ms毫秒)
+
+   清除延时计时器
+   clearInterval(timmer);
+
+
+
+
+ *方式
+
+	id方式
+	var designer = document.getElementById('designer');
+
+	class方式
+	var manager = document.getElementsByClassName('manager');
+
+	tag标签名方式
+	var li = document.getElementsByTagName('li');
+
+
+
+*dom操作
+
+	1、样式css操作 
+	var designer = document.getElementById('designer');
+	designer.style.fontSize = '30px';
+
+	2、属性操作
+	var thumb = document.getElementById('thumb');
+
+	获取属性
+	thumb.getAttribute('id')
+	
+	设置属性
+	thumb.setAttribute('src','images/2.jpg');
+	
+	3、innerText内部文本  innerHTML内部html
+	var employees = document.getElementById('employees');
+	employees.innerText = "<li>人员太多</li>";
+	employees.innerHTML = "<li>人员太多</li>";
+	
+
+
+	4、value值
+	var input = document.getElementById('name');
+	input.value = '李四';

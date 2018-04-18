@@ -1,0 +1,80 @@
+一、cookie的两个函数
+
+
+
+二、JSON与XML的区别比较 *（https://www.cnblogs.com/SanMaoSpace/p/3139186.html）
+1.定义介绍
+
+(1).XML定义
+扩展标记语言 (Extensible Markup Language, XML) ，用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的源语言。 XML使用DTD(document type definition)文档类型定义来组织数据;格式统一，跨平台和语言，早已成为业界公认的标准。
+XML是标准通用标记语言 (SGML) 的子集，非常适合 Web 传输。XML 提供统一的方法来描述和交换独立于应用程序或供应商的结构化数据。
+
+(2).JSON定义
+JSON(JavaScript Object Notation)一种轻量级的数据交换格式，具有良好的可读和便于快速编写的特性。可在不同平台之间进行数据交换。JSON采用兼容性很高的、完全独立于语言文本格式，同时也具备类似于C语言的习惯(包括C, C++, C#, Java, JavaScript, Perl, Python等)体系的行为。这些特性使JSON成为理想的数据交换语言。
+JSON基于JavaScript Programming Language , Standard ECMA-262 3rd Edition - December 1999 的一个子集。
+
+
+
+
+三、跨域的含义和情形
+
+跨域是指一个域下的文档或脚本试图去请求另一个域下的资源，这里跨域是广义的。
+
+广义的跨域：
+1.) 资源跳转： A链接、重定向、表单提交
+2.) 资源嵌入： <link>、<script>、<img>、<frame>等dom标签，还有样式中background:url()、@font-face()等文件外链
+3.) 脚本请求： js发起的ajax请求、dom和js对象的跨域操作等
+
+
+
+常见跨域场景
+
+URL                                      说明                    是否允许通信
+http://www.domain.com/a.js
+http://www.domain.com/b.js         同一域名，不同文件或路径           允许
+http://www.domain.com/lab/c.js
+
+http://www.domain.com:8000/a.js
+http://www.domain.com/b.js         同一域名，不同端口                不允许
+ 
+http://www.domain.com/a.js
+https://www.domain.com/b.js        同一域名，不同协议                不允许
+ 
+http://www.domain.com/a.js
+http://192.168.4.12/b.js           域名和域名对应相同ip              不允许
+ 
+http://www.domain.com/a.js
+http://x.domain.com/b.js           主域相同，子域不同                不允许
+http://domain.com/c.js
+ 
+http://www.domain1.com/a.js
+http://www.domain2.com/b.js        不同域名                         不允许
+
+
+通过jsonp跨域
+
+通常为了减轻web服务器的负载，我们把js、css，img等静态资源分离到另一台独立域名的服务器上，在html页面中再通过相应的标签从不同域名下加载静态资源，而被浏览器允许，基于此原理，我们可以通过动态创建script，再请求一个带参网址实现跨域通信。
+
+
+
+四、js---post与get请求的区别
+
+1.效率
+GET的意思是『得』，从服务器获取数据（也可以上传数据，参数就是），效率较高
+POST的意思是『给』，但可以向服务器发送数据和下载数据，效率不如GET
+
+2.缓存
+GET 请求能够被缓存，默认的请求方式也是有缓存的
+POST请求默认不会缓存
+缓存是针对URL来进行缓存的，GET请求由于其参数是直接加在URL上-的，一种参数组合就有一种URL的缓存，可以根据参数来进行一一对应，重复请求是幂等的（不论请求多少次，结果都一样）;
+而POST请求的URL没有参数,每次请求的URL都相同，数据体（HTTPBody）可能不同，无法一一对应，所以缓存没有意义
+
+3.安全性
+GET的所有参数全部包装在URL中，明文显示，且服务器的访问日志会记录，非常不安全
+POST的URL中只有资源路径，不包含参数，参数封装在二进制的数据体中，服务器也不会记录参数，相对安全。所有涉及用户隐私的数据都要用POST传输
+
+4.数据量
+HTTP协议中均没有对GET和POST请求的数据大小进行限制，但是实际应用中它们通常受限于软硬件平台的设计和性能。
+
+GET：不同的浏览器和服务器不同，一般限制在2~8K之间，更加常见的是1k以内
+POST方法提交的数据比较大，大小靠服务器的设定值限制，PHP默认是2M（具体的话大家以后看后端给的开发文档就行了）

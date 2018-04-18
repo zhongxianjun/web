@@ -3,19 +3,26 @@
 <head>
 	<meta charset="utf-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 	<title>QQ音乐</title>
 	<style type="text/css">
 	*{padding: 0;
 		margin: 0;}
+<<<<<<< HEAD
 <<<<<<< HEAD
 	ul li{ list-style: none; margin-top: 8px; border-bottom: 1px solid #ddd; }
 =======
 	ul li{ list-style: none; margin-top: 8px; border-bottom: 1px solid #ddd; cursor: pointer; }
 	ul li:hover{ color:red; }
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+	ul li{ list-style: none; margin-top: 8px; border-bottom: 1px solid #ddd; }
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 		.main{
 			width:500px;
 			min-height: 800px;
@@ -23,19 +30,27 @@
 			background-color: #ccc;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		form{
 =======
 		.form{
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+		form{
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 			width:280px;
 			margin: 0px auto;
 			padding-top: 20px;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		form input{
 =======
 		.form input{
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+		form input{
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 			width:220px;
 			line-height: 16px;
 			padding: 6px;
@@ -43,10 +58,14 @@
 			outline: none;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		form #search{
 =======
 		.form #search{
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+		form #search{
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 			width:32px;
 			height: 32px;
 			background: url(images/search.png) center center no-repeat;
@@ -63,6 +82,7 @@
 <body>
 	<div class="main">
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<form method="get" action="">
 			<input type="text" name="txt" placeholder="搜索喜欢的歌手/歌曲名">
 			<button id="search" type="button"></button>
@@ -73,6 +93,12 @@
 			<button id="search" type="button"></button>
 		</div>
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+		<form method="get" action="">
+			<input type="text" name="txt" placeholder="搜索喜欢的歌手/歌曲名">
+			<button id="search" type="button"></button>
+		</form>
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 		<div class="access">
 			
 		</div>
@@ -82,10 +108,14 @@
 		$(function(){
 			$("#search").click(function(){
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var keys = $(".main form input").val();
 =======
 				var keys = $(".main .form input").val();
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+				var keys = $(".main form input").val();
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 				if(!keys){
 					return;
 				}
@@ -107,10 +137,14 @@
 						}
 						res += "</ul>";
 <<<<<<< HEAD
+<<<<<<< HEAD
 						$(".access").append(res);
 =======
 						$(".access").html(res);
 >>>>>>> 39a9783dfd7e48bae3bc77585532d7148c2edbf1
+=======
+						$(".access").append(res);
+>>>>>>> e2579f4a6901c8f4bdb4a87f79f43a2f9b750496
 					},
 				})
 			})
